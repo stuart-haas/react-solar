@@ -1,0 +1,62 @@
+.module {
+  margin: 1rem 0;
+}
+
+.label {
+  font-size: 1rem;
+}
+
+.value {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.index {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.25rem;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.background {
+  position: relative;
+  background: #196067;
+  height: 0.25rem;
+  margin: 0.5rem;
+  width: 100%;
+}
+
+.indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #98e6e6;
+  transition: all 0.25s ease;
+  cursor: pointer;
+
+  &:hover {
+    .tooltip {
+      opacity: 1;
+    }
+  }
+}
+
+.tooltip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.75rem;
+  font-size: 0.65rem;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+  opacity: 0;
+}
